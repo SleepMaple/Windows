@@ -1,0 +1,6 @@
+//Driver File
+C:\Windows\System32\DriverStore\FileRepository
+
+//Export Driver File
+Export-WindowsDriver -Online -Destination C:\Backup
+
