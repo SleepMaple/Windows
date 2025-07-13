@@ -1,0 +1,4 @@
+image用WINPE的Acronis展開來後，
+因為封鎖了admin的關係又限制密碼長度，
+所以要先且解開限制再進入windows32/oobe > ./sysprep.exe /audit /reboot，
+之後再封裝。
