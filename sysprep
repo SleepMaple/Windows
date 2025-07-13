@@ -1,4 +1,29 @@
-image用WINPE的Acronis展開來後，
-因為封鎖了admin的關係又限制密碼長度，
-所以要先且解開限制再進入windows32/oobe > ./sysprep.exe /audit /reboot，
-之後再封裝。
+== before oobe
+
+enter bios and setup the disk mode into AHCI(not RAID) mode
+
+== restore the image on device
+
+windowsPE > archonis > restore the tib file
+
+or 
+
+use usb install the new windows
+
+== oobe
+
+enter windows using audit mode
+  ctrl + shift + f3(use administrator account)
+
+== before sysprep
+
+1. delete user and clean temp disk data
+2. windows update 
+3. trend antivirus guid reset
+4. pc ip dhcp
+
+windows + R: sysprep > click the sysprep.exe > oobe and generalize
+
+== after sysprep:
+
+windowsPE > Archonis > save the disk driver state into tib(tibx) file
