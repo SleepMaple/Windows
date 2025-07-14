@@ -22,7 +22,12 @@ enter windows using audit mode
 3. trend antivirus guid reset
 4. pc ip dhcp
 
+(enter into audit mode)
 windows + R: sysprep > click the sysprep.exe > oobe and generalize
+
+(sysprep)
+1. cd C:\Windows\System32\Sysprep
+2. sysprep /generalize /oobe /shutdown /unattend:"C:\CSI\System_Prepare\unattend1809.xml"
 
 == after sysprep:
 
